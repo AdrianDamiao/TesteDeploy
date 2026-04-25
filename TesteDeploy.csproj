@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <InterceptorsNamespaces>
+      $(InterceptorsNamespaces);Microsoft.AspNetCore.OpenApi.Generated
+    </InterceptorsNamespaces>
+  </PropertyGroup>
+
 </Project>
